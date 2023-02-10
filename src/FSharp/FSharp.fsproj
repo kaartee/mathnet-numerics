@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        <TargetFrameworks>net6.0;net5.0;net461;net48;netstandard2.0</TargetFrameworks>
+        <TargetFrameworks>net7.0;net6.0;net461;net48;netstandard2.0</TargetFrameworks>
         <AssemblyName>MathNet.Numerics.FSharp</AssemblyName>
         <RootNamespace>MathNet.Numerics</RootNamespace>
         <IsPackable>true</IsPackable>
@@ -72,5 +72,6 @@ Control.Describe now includes CPU architecture and family identifier if know</Pa
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
     </ItemGroup>
 </Project>

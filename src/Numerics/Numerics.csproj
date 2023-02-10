@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Library</OutputType>
-        <TargetFrameworks>net6.0;net5.0;net461;net48;netstandard2.0</TargetFrameworks>
+        <TargetFrameworks>net7.0;net6.0;net461;net48;netstandard2.0</TargetFrameworks>
         <LangVersion>7.3</LangVersion>
         <AssemblyName>MathNet.Numerics</AssemblyName>
         <RootNamespace>MathNet.Numerics</RootNamespace>
@@ -12,8 +12,8 @@
         <VersionPrefix>5.0.0</VersionPrefix>
         <VersionSuffix></VersionSuffix>
         <Title>Math.NET Numerics$(TitleSuffix)</Title>
-        <Description>Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .NET 5.0 or higher, .NET Standard 2.0 and .NET Framework 4.6.1 or higher, on Windows, Linux and Mac.$(DescriptionSuffix)</Description>
-        <PackageReleaseNotes>COMPATIBILITY: net5.0, net48 better supported with explicit builds
+        <Description>Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .NET 6.0 or higher, .NET Standard 2.0 and .NET Framework 4.6.1 or higher, on Windows, Linux and Mac.$(DescriptionSuffix)</Description>
+        <PackageReleaseNotes>COMPATIBILITY: net48 better supported with explicit builds
 COMPATIBILITY: netstandard1.x, net40, net45 no longer supported
 BREAKING: drop all which was marked as obsolete
 BREAKING: all native provider adapters moved out to separate NuGet packages
@@ -52,10 +52,10 @@ Control.Describe now includes CPU architecture and family identifier if know</Pa
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="System.ValueTuple" Version="4.4.0" Condition="'$(TargetFramework)' == 'net461'" />
         <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
     </ItemGroup>
 </Project>
